@@ -14,6 +14,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack's Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        pre {
+            white-space: pre-wrap; /* Allows wrapping */
+            word-wrap: break-word; /* Ensures words break if necessary */
+            overflow-wrap: break-word; /* More compatibility for wrapping */
+        }
+    </style>
 </head>
 <body class="bg-blue-100 font-sans">
 <header class="bg-blue-900 text-white text-center p-6 shadow-lg">
@@ -31,15 +39,15 @@
         </p>
         <p class="text-gray-700 mt-4">
             <code>
-                    <pre>
-    def multiply(number1,number2):
-        print(number1*number2)
+                <pre>
+    def multiply(number1, number2):
+        print(number1 * number2)
 
     if __name__ == '__main__':
-        multiply(2,4)
-        multiply(16,18)
-        multiply(1234,1234567)
-                    </pre>
+        multiply(2, 4)
+        multiply(16, 18)
+        multiply(1234, 1234567)
+                </pre>
             </code>
         </p>
         <p class="text-sm text-gray-500 mt-2">Published on: March 15, 2025</p>
@@ -55,7 +63,7 @@
         <img src="images/shapes.png" width="300"/>
         <p>
             <code>
-                        <pre>
+                <pre>
         from libs import easy_shapes
 
         easy_shapes.setup()
@@ -64,13 +72,12 @@
         easy_shapes.draw_triangle(300, 200, 80, "green")
         easy_shapes.draw_star(400, 100, 50, "yellow")
 
-        # Jacks work here ...
-        easy_shapes.draw_circle(101,101,100,"green")
-        easy_shapes.draw_circle(150,150,100,"blue")
-
+        # Jack's work here ...
+        easy_shapes.draw_circle(101, 101, 100, "green")
+        easy_shapes.draw_circle(150, 150, 100, "blue")
 
         easy_shapes.finish()
-                        </pre>
+                </pre>
             </code>
         </p>
         <p class="text-sm text-gray-500 mt-2">Published on: March 17, 2025</p>
