@@ -30,27 +30,35 @@
 </header>
 
 <main class="max-w-2xl mx-auto mt-6 p-4 bg-white rounded-lg shadow-md border border-blue-500">
+
+
     <article class="mb-6 border-b pb-4 border-blue-400">
         <h2 class="text-2xl font-bold text-blue-700">
-            My first Python function
+            I learnt how to make 10 circles using loops.
         </h2>
-        <p class="text-gray-700 mt-2">
-            This Python function will multiply two numbers I give it.
+        <p>
+            Here I am trying to make different patterns.
         </p>
-        <p class="text-gray-700 mt-4">
+        <img src="images/jacks_lesson_3.png" width="300"/>
+        <p>
             <code>
                 <pre>
-    def multiply(number1, number2):
-        print(number1 * number2)
+    from libs import easy_shapes
 
-    if __name__ == '__main__':
-        multiply(2, 4)
-        multiply(16, 18)
-        multiply(1234, 1234567)
+    easy_shapes.setup()
+
+
+    # Jacks work here ...
+    easy_shapes.draw_circle(101,101,100,"green")
+
+    for i in range(1,10):
+        easy_shapes.draw_circle(101*i,101,100,"blue")
+
+    easy_shapes.finish()  # Keep window open
                 </pre>
             </code>
         </p>
-        <p class="text-sm text-gray-500 mt-2">Published on: March 15, 2025</p>
+        <p class="text-sm text-gray-500 mt-2">Published on: March 17, 2025</p>
     </article>
 
     <article class="mb-6 border-b pb-4 border-blue-400">
@@ -82,6 +90,30 @@
         </p>
         <p class="text-sm text-gray-500 mt-2">Published on: March 17, 2025</p>
     </article>
+
+    <article class="mb-6 border-b pb-4 border-blue-400">
+        <h2 class="text-2xl font-bold text-blue-700">
+            My first Python function
+        </h2>
+        <p class="text-gray-700 mt-2">
+            This Python function will multiply two numbers I give it.
+        </p>
+        <p class="text-gray-700 mt-4">
+            <code>
+                <pre>
+    def multiply(number1, number2):
+        print(number1 * number2)
+
+    if __name__ == '__main__':
+        multiply(2, 4)
+        multiply(16, 18)
+        multiply(1234, 1234567)
+                </pre>
+            </code>
+        </p>
+        <p class="text-sm text-gray-500 mt-2">Published on: March 15, 2025</p>
+    </article>
+
 </main>
 
 <footer class="text-center p-4 mt-6 bg-blue-900 text-white">
